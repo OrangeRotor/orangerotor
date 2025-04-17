@@ -26,67 +26,48 @@
       color: white;
       padding: 1rem;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
     nav a {
       color: white;
-      margin: 0 1.5rem;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1rem;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    .logo-container {
+    .logo {
       text-align: center;
       padding: 4rem 1rem 2rem;
     }
 
-    .logo-container img {
-      max-width: 260px;
+    .logo img {
+      max-width: 220px;
+      margin-bottom: 1rem;
     }
 
-    section {
+    .content {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .section {
       padding: 4rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
+      border-top: 1px solid #ddd;
     }
 
-    section h2 {
+    .section h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
 
-    section p {
+    .section p {
       font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .portfolio-item {
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 1rem;
-      text-align: center;
-    }
-
-    .portfolio-item img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     footer {
@@ -96,64 +77,36 @@
       padding: 2rem 1rem;
       margin-top: auto;
     }
-
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-
-      .logo-container {
-        padding: 3rem 1rem 1rem;
-      }
-
-      section {
-        padding: 3rem 1rem;
-      }
-    }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
   </nav>
 
-  <div class="logo-container" id="home">
-    <img src="new-logo.png" alt="OrangeRotor Logo" />
+  <div class="logo">
+    <img src="orangerotortransparent.png" alt="OrangeRotor Logo" />
   </div>
 
-  <section>
-    <h2>Welcome to OrangeRotor</h2>
-    <p>We specialize in high-quality aerial photography and videography using state-of-the-art drone technology. Whether you're showcasing real estate, capturing breathtaking landscapes, or documenting an event from a new perspective — we've got you covered.</p>
-  </section>
-
-  <section id="portfolio">
-    <h2>Our Work</h2>
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/400x250.png?text=Aerial+Shot+1" alt="Aerial Shot 1">
-        <p>Downtown skyline captured at golden hour.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/400x250.png?text=Aerial+Shot+2" alt="Aerial Shot 2">
-        <p>Rolling hills and misty sunrise.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/400x250.png?text=Aerial+Shot+3" alt="Aerial Shot 3">
-        <p>Overhead view of a mountain lake.</p>
-      </div>
+  <div class="content">
+    <div class="section">
+      <h2>Welcome</h2>
+      <p>OrangeRotor offers bold aerial photography rooted in the scenic beauty of the Smoky Mountains. Modern. Creative. Reliable.</p>
     </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Want to book a shoot or learn more about our services? Reach out and let's talk!</p>
-    <p>Email: <a href="mailto:info@orangerotor.com">info@orangerotor.com</a></p>
-    <p>Phone: (123) 456-7890</p>
-  </section>
+    <div class="section">
+      <h2>Portfolio</h2>
+      <p>Coming soon — a showcase of our drone shots capturing the world from above.</p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Reach out via email or phone to book your next project.</p>
+    </div>
+  </div>
 
   <footer>
     &copy; 2025 OrangeRotor. All rights reserved.
