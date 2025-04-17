@@ -21,6 +21,16 @@
       min-height: 100vh;
     }
 
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+
+    header img {
+      max-width: 220px;
+      margin-bottom: 1rem;
+    }
+
     nav {
       background-color: #1a1a1a;
       color: white;
@@ -39,35 +49,35 @@
       text-decoration: underline;
     }
 
-    .logo {
-      text-align: center;
-      padding: 4rem 1rem 2rem;
-    }
-
-    .logo img {
-      max-width: 220px;
-      margin-bottom: 1rem;
-    }
-
-    .content {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .section {
+    section {
       padding: 4rem 2rem;
-      border-top: 1px solid #ddd;
+      text-align: center;
     }
 
-    .section h2 {
+    section h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
 
-    .section p {
+    section p {
       font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #f97316;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ea580c;
     }
 
     footer {
@@ -80,37 +90,43 @@
   </style>
 </head>
 <body>
-
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <a href="#book">Book</a>
   </nav>
 
-  <div class="logo">
+  <header>
     <img src="orangerotortransparent.png" alt="OrangeRotor Logo" />
-  </div>
+  </header>
 
-  <div class="content">
-    <div class="section">
-      <h2>Welcome</h2>
-      <p>OrangeRotor offers bold aerial photography rooted in the scenic beauty of the Smoky Mountains. Modern. Creative. Reliable.</p>
-    </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>OrangeRotor is a drone-based photography brand rooted in the foothills of the Smoky Mountains. We capture high-definition aerial images with bold creativity and modern vision.</p>
+  </section>
 
-    <div class="section">
-      <h2>Portfolio</h2>
-      <p>Coming soon — a showcase of our drone shots capturing the world from above.</p>
-    </div>
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Take a look at some of our favorite shots from above. Our portfolio showcases landscapes, real estate, events, and more.</p>
+    <!-- Placeholder for images -->
+  </section>
 
-    <div class="section">
-      <h2>Contact</h2>
-      <p>Reach out via email or phone to book your next project.</p>
-    </div>
-  </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Interested in working with us? We'd love to hear from you!</p>
+    <p>Email: <a href="mailto:info@orangerotor.com">info@orangerotor.com</a></p>
+    <p>Phone: (123) 456-7890</p>
+  </section>
+
+  <section id="book">
+    <h2>Book Aerial Photography</h2>
+    <p>Ready to elevate your project? Book a shoot with us now.</p>
+    <a href="mailto:info@orangerotor.com?subject=Booking%20Aerial%20Photography" class="btn">Book Now</a>
+  </section>
 
   <footer>
     &copy; 2025 OrangeRotor. All rights reserved.
   </footer>
-
 </body>
 </html>
